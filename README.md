@@ -6,7 +6,7 @@
 
 
 ## Diseños
-<img src="./Diseños/Inicio1.png" alt="Detalles" width="20%" height="20%"/><img src="./Diseños/Inicio.png" alt="Detalles" width="20%" height="20%"/><img src="./Diseños/Detalles.png" alt="Detalles" width="20%" height="20%"/><img src="./Diseños/Temporada 1.png" alt="Detalles" width="20%" height="20%"/><img src="./Diseños/Dropdown Menú.png" alt="Detalles" width="20%" height="20%"/><img src="./Diseños/Temporada 2.png" alt="Detalles" width="20%" height="20%"/><img src="./Diseños/Temporada 3.png" alt="Detalles" width="20%" height="20%"/>
+<img src="./Diseños/Inicio1.png" alt="Detalles" width="30%" height="30%"/><img src="./Diseños/Inicio.png" alt="Detalles" width="30%" height="30%"/><img src="./Diseños/Detalles.png" alt="Detalles" width="30%" height="30%"/><img src="./Diseños/Temporada 1.png" alt="Detalles" width="30%" height="30%"/><img src="./Diseños/Dropdown Menú.png" alt="Detalles" width="30%" height="30%"/><img src="./Diseños/Temporada 2.png" alt="Detalles" width="30%" height="30%"/><img src="./Diseños/Temporada 3.png" alt="Detalles" width="30%" height="30%"/>
 
 ## Contribuir
 No tengo mucha idea de como funciona GitHub, así que si queréis colaborar contactad conmigo por Discord: ``Vicente#0001``
