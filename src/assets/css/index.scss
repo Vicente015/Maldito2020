@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap");
+
+:root {
+    --rojo: #e50914;
+    --fondo: #141414;
+    --gris: #c4c4c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: Roboto, sans-serif;
+}
+
+.fondo {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/src/assets/img/Anonymous.jpg);
+    //background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 5%,
+        rgba(0, 0, 0, 1) 31%,
+        rgba(0, 0, 0, 0.74) 49%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logotipo {
+        max-height: 15%;
+        max-width: 15%;
+    }
+
+    nav {
+        a {
+            color: #aaa;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #ffff;
+        }
+
+        a.active {
+            color: #ffff;
+        }
+    }
+}
+
+.película-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+
+    .contenedor {
+        margin: 0 auto;
+        margin-bottom: 6.5em;
+    }
+
+    .título {
+        font-weight: 700;
+        font-size: 3.12em;
+        margin-bottom: 0.4em;
+    }
+
+    .descripción {
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1.75em;
+        max-width: 50%;
+        margin-bottom: 1.25em;
+    }
+
+    .boton {
+        i {
+            margin-right: 1.23em;
+        }
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 0.31em;
+        padding: 0.93em 1.87em;
+        color: #fff;
+        margin-right: 1.25em;
+        cursor: pointer;
+        transition: 0.3s ease all;
+        font-size: 1.2em;
+    }
+
+    .boton:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        .logotipo {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .contenedor {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .película-principal {
+        font-size: 14px;
+
+        .descripción {
+            max-width: 100%;
+        }
+    }
+}

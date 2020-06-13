@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap");
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+  --gris: #c4c4c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: borde-box;
+          box-sizing: borde-box;
+}
+
+body {
+  background: var(--fondo);
+  font-family: Roboto, sans-serif;
+}
+
+.fondo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/src/assets/img/Anonymous.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/src/assets/img/Anonymous.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 20px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, black), color-stop(31%, black), color-stop(49%, rgba(0, 0, 0, 0.74)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, black 5%, black 31%, rgba(0, 0, 0, 0.74) 49%, rgba(0, 0, 0, 0) 100%);
+}
+
+header .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logotipo {
+  max-height: 15%;
+  max-width: 15%;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+
+header nav a.active {
+  color: #ffff;
+}
+
+.película-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  margin-bottom: 3.12em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.película-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.5em;
+}
+
+.película-principal .título {
+  font-weight: 700;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.película-principal .descripción {
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.película-principal .boton {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  font-size: 1.2em;
+}
+
+.película-principal .boton i {
+  margin-right: 1.23em;
+}
+
+.película-principal .boton:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  header .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .película-principal {
+    font-size: 14px;
+  }
+  .película-principal .descripción {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

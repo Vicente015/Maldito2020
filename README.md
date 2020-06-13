@@ -1,4 +1,4 @@
-<img src="./Diseños/Detalles.png" alt="Detalles" width="45%" height="45%"/>
+<img src="./Diseños/Detalles.png" alt="Detalles" width="60%" height="60%"/>
 
 # Maldito 2020
 Sitio web inspirado en Netflix que muestra una serie falsa llamada "2020" de forma de comedia donde se muestran los episodios de lo que ha ocurrido este año.
