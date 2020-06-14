@@ -19,7 +19,7 @@ body {
 }
 
 .fondo {
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/src/assets/img/Anonymous.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/src/assets/img/Portada.jpg);
     //background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -34,9 +34,9 @@ header {
     padding: 20px 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 1) 5%,
-        rgba(0, 0, 0, 1) 31%,
-        rgba(0, 0, 0, 0.74) 49%,
+        rgba(0, 0, 0, 0.9) 5%,
+        rgba(0, 0, 0, 0.7) 30%,
+        rgba(0, 0, 0, 0.2) 80%,
         rgba(0, 0, 0, 0) 100%
     );
 
@@ -47,8 +47,8 @@ header {
     }
 
     .logotipo {
-        max-height: 15%;
-        max-width: 15%;
+        max-height: 12%;
+        max-width: 12%;
     }
 
     nav {
@@ -100,20 +100,143 @@ header {
         i {
             margin-right: 1.23em;
         }
-        background-color: rgba(0, 0, 0, 0.5);
         border: none;
         border-radius: 0.31em;
-        padding: 0.93em 1.87em;
-        color: #fff;
+        padding: 0.93em 1.57em;
         margin-right: 1.25em;
         cursor: pointer;
         transition: 0.3s ease all;
         font-size: 1.2em;
     }
 
-    .boton:hover {
-        background-color: #fff;
+    .boton-play {
+        background-color: #ffff;
         color: #000;
+    }
+
+    .boton-info {
+        background-color: rgba(196, 196, 196, 0.6);
+        color: #ffff;
+    }
+
+    .boton-info:hover {
+        background-color: rgba(160, 160, 160, 0.637);
+    }
+
+    .boton-play:hover {
+        background-color: rgba(255, 255, 255, 0.788);
+    }
+}
+
+/* Contendor: Título y controles */
+
+.contenedor-título-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    h3 {
+        color: #ffff;
+        font-size: 30px;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+    }
+
+    .indicadores {
+        buttom {
+            background: #ffff;
+            height: 3px;
+            width: 10px;
+            cursor: pointer;
+            border: none;
+            margin-right: 2px;
+        }
+
+        buttom:hover,
+        buttom:active {
+            background: red;
+        }
+    }
+}
+
+/* Contendor: Principal y flechas */
+
+.películas-recomendadas {
+    margin-bottom: 70px;
+
+    .contenedor-carousel {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            flex-wrap: nowrap;
+
+            .pelicula {
+                min-width: 20%;
+                transition: 0.3s ease all;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+
+            .pelicula.hover {
+                transform: scale(1.2);
+                transform-origin: center;
+            }
+        }
+    }
+
+    .contenedor-principal {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .flecha-derecha,
+        .flecha-izquierda {
+            align-items: center;
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0.1);
+            font-size: 40px;
+            height: 50%;
+            top: calc(50% - 25%);
+            line-height: 30px;
+            width: 40px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 500;
+            transition: 0.2s ease all;
+        }
+
+        .flecha-derecha:hover,
+        .flecha-izquierda:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .flecha-izquierda {
+            left: 0;
+
+            i {
+                margin-top: 35px;
+                margin-left: 10px;
+            }
+        }
+
+        .flecha-derecha {
+            right: 0;
+
+            i {
+                margin-top: 35px;
+                margin-left: 15px;
+            }
+        }
     }
 }
 
