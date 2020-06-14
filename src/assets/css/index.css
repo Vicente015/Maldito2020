@@ -183,7 +183,7 @@ header nav a.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  overflow-x: scroll;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
