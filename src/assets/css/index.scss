@@ -172,8 +172,8 @@ header {
 
         .carousel {
             display: flex;
-            //overflow: hidden;
-            overflow-x: scroll;
+            overflow: hidden;
+            overflow-x: hidden;
             flex-wrap: nowrap;
 
             .pelicula {
