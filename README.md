@@ -1,4 +1,4 @@
-<img src="./src/assets/img/Logo.png" alt="Detalles" width="50%" height="50%" style="align-items: center"/>
+<img src="../assets/img/Logo.png" alt="Detalles" width="50%" height="50%" style="align-items: center"/>
 
 ### Sitio web inspirado en Netflix que muestra una serie falsa llamada "2020" en forma de comedia donde se muestran los episodios de lo que ha ocurrido este año.
 
