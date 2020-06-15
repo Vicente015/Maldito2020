@@ -1,4 +1,4 @@
-const fila = document.querySelector('.carousel');
+const fila = document.querySelector('.contenedor-carousel');
 const peliculas = document.querySelectorAll('.pelicula');
 const flechaIzquierda = document.getElementById('flecha-izquierda');
 const flechaDerecha = document.getElementById('flecha-derecha');
@@ -6,6 +6,7 @@ const flechaDerecha = document.getElementById('flecha-derecha');
 
 // ? ----- ----- Event Listener para la flecha derecha. ----- -----
 flechaDerecha.addEventListener('click', () => {
+    console.log("uwu")
     fila.scrollLeft += fila.offsetWidth;
 
     const indicadorActivo = document.querySelector('.indicadores .activo');
@@ -30,6 +31,7 @@ flechaIzquierda.addEventListener('click', () => {
 const numeroPaginas = Math.ceil(peliculas.length / 5);
 for (let i = 0; i < numeroPaginas; i++) {
     const indicador = document.createElement('button');
+    indicador.classList.add('botoncito');
 
     if (i === 0) {
         indicador.classList.add('activo');

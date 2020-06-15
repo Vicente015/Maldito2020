@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap");
 
 :root {
     --rojo: #e50914;
@@ -143,17 +144,17 @@ header {
     }
 
     .indicadores {
-        buttom {
+        .botoncito {
             background: #ffff;
             height: 3px;
-            width: 10px;
+            width: 12px;
             cursor: pointer;
             border: none;
             margin-right: 2px;
         }
 
-        buttom:hover,
-        buttom:active {
+        .botoncito:hover,
+        .activo {
             background: red;
         }
     }
@@ -162,19 +163,21 @@ header {
 /* Contendor: Principal y flechas */
 
 .películas-recomendadas {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
     .contenedor-carousel {
         width: 100%;
         padding: 20px 0;
-        overflow: hidden;
+        overflow-x: hidden;
+
         scroll-behavior: smooth;
 
         .carousel {
+            scroll-behavior: smooth;
             display: flex;
-            overflow: hidden;
-            overflow-x: hidden;
             flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: visible;
 
             .pelicula {
                 min-width: 20%;
@@ -187,7 +190,7 @@ header {
                 }
             }
 
-            .pelicula.hover {
+            .pelicula:hover {
                 transform: scale(1.2);
                 transform-origin: center;
             }
@@ -238,6 +241,30 @@ header {
                 margin-left: 15px;
             }
         }
+    }
+}
+
+footer {
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 700;
+    color: #ffff;
+    text-decoration: none;
+
+    a:hover,
+    a:active {
+        color: #ffff;
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(116, 148, 253);
+        text-decoration: none;
     }
 }
 
