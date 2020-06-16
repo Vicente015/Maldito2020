@@ -31,6 +31,37 @@ body {
     margin: auto;
 }
 
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
+
 header {
     padding: 20px 0;
     background: linear-gradient(
@@ -70,43 +101,9 @@ header {
     }
 }
 
-.github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-    0%,
-    100% {
-        transform: rotate(0);
-    }
-
-    20%,
-    60% {
-        transform: rotate(-25deg);
-    }
-
-    40%,
-    80% {
-        transform: rotate(10deg);
-    }
-}
-
-@media (max-width: 500px) {
-    .github-corner:hover .octo-arm {
-        animation: none;
-    }
-
-    .github-corner .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-    }
-}
-
 .película-principal {
-    a {
-        text-decoration: none;
-    }
-
     font-size: 16px;
+    margin-top: -0.5em;
     min-height: 40.62em;
     color: #fff;
 
@@ -119,49 +116,141 @@ header {
         margin-bottom: 6.5em;
     }
 
+    .serieNetflix {
+        max-height: 70%;
+        max-width: 70%;
+    }
+
     .título {
         font-weight: 700;
-        font-size: 3.12em;
-        margin-bottom: 0.4em;
+        font-size: 3.52em;
+        margin-bottom: -0.1em;
+    }
+
+    .novedad {
+        margin-bottom: 0.2em;
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.6em;
+
+        .top10 {
+            max-height: 3%;
+            max-width: 3%;
+        }
+
+        p {
+            font-size: 1.8em;
+            font-family: Roboto;
+            font-weight: 700;
+            padding-left: 0.4em;
+        }
     }
 
     .descripción {
-        font-weight: normal;
+        font-family: Roboto;
+        font-weight: 400;
         font-size: 1.5em;
-        line-height: 1.75em;
+        line-height: 1.55em;
         max-width: 50%;
-        margin-bottom: 1.25em;
+        margin-bottom: 0.6em;
     }
 
-    .boton {
-        i {
-            margin-right: 1.23em;
+    .botones {
+        display: flex;
+        margin-bottom: 0.8em;
+
+        .boton {
+            i {
+                margin-right: 1.23em;
+            }
+            border: none;
+            border-radius: 0.31em;
+            padding: 0.93em 1.57em;
+            margin-right: 1.25em;
+            cursor: pointer;
+            transition: 0.3s ease all;
+            font-size: 1.2em;
+            font-family: Roboto;
+            font-weight: 500;
         }
-        border: none;
-        border-radius: 0.31em;
-        padding: 0.93em 1.57em;
-        margin-right: 1.25em;
-        cursor: pointer;
-        transition: 0.3s ease all;
-        font-size: 1.2em;
+
+        .boton-play {
+            background-color: #ffff;
+            color: #000;
+        }
+
+        .boton-info {
+            background-color: rgba(196, 196, 196, 0.6);
+            color: #ffff;
+        }
+
+        .boton-info:hover {
+            background-color: rgba(160, 160, 160, 0.637);
+        }
+
+        .boton-play:hover {
+            background-color: rgba(255, 255, 255, 0.788);
+        }
+
+        .botón-voto {
+            cursor: pointer;
+            transition: 0.3s ease all;
+            margin-right: 0.8em;
+        }
     }
 
-    .boton-play {
-        background-color: #ffff;
-        color: #000;
+    .créditos {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.45em;
+        line-height: 1.5em;
+        margin-bottom: -4em;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Roboto;
+            font-weight: 400;
+        }
+        a:hover {
+            text-decoration: none;
+            color: rgb(224, 224, 224);
+            font-family: Roboto;
+            font-weight: 500;
+        }
+    }
+}
+
+.navbarabajo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: -1.5em;
+    padding-bottom: 0.28em;
+    margin-bottom: 1em;
+
+    .info {
+        color: #fff;
+        border-bottom: 6px solid #e50914;
     }
 
-    .boton-info {
-        background-color: rgba(196, 196, 196, 0.6);
-        color: #ffff;
+    a {
+        color: #ccc;
+        text-decoration: none;
+        padding-right: 2em;
     }
 
-    .boton-info:hover {
-        background-color: rgba(160, 160, 160, 0.637);
-    }
-
-    .boton-play:hover {
-        background-color: rgba(255, 255, 255, 0.788);
+    a:hover {
+        color: #fff;
     }
 }
 
@@ -280,7 +369,7 @@ header {
 }
 
 footer {
-    padding-bottom: 20px;
+    padding-top: 0.7em;
     text-align: center;
     align-items: center;
 

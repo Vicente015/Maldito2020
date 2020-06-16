@@ -32,45 +32,6 @@ body {
   margin: auto;
 }
 
-header {
-  padding: 20px 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.7)), color-stop(80%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
-}
-
-header .contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-header .logotipo {
-  max-height: 12%;
-  max-width: 12%;
-}
-
-header nav a {
-  color: #aaa;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-header nav a:hover {
-  color: #ffff;
-}
-
-header nav a.active {
-  color: #ffff;
-}
-
 .github-corner:hover .octo-arm {
   -webkit-animation: octocat-wave 560ms ease-in-out;
           animation: octocat-wave 560ms ease-in-out;
@@ -123,8 +84,48 @@ header nav a.active {
   }
 }
 
+header {
+  padding: 20px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.7)), color-stop(80%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+header .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+header .logotipo {
+  max-height: 12%;
+  max-width: 12%;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+
+header nav a.active {
+  color: #ffff;
+}
+
 .película-principal {
   font-size: 16px;
+  margin-top: -0.5em;
   min-height: 40.62em;
   color: #fff;
   margin-bottom: 3.12em;
@@ -136,30 +137,67 @@ header nav a.active {
           align-items: flex-end;
 }
 
-.película-principal a {
-  text-decoration: none;
-}
-
 .película-principal .contenedor {
   margin: 0 auto;
   margin-bottom: 6.5em;
 }
 
+.película-principal .serieNetflix {
+  max-height: 70%;
+  max-width: 70%;
+}
+
 .película-principal .título {
   font-weight: 700;
-  font-size: 3.12em;
-  margin-bottom: 0.4em;
+  font-size: 3.52em;
+  margin-bottom: -0.1em;
+}
+
+.película-principal .novedad {
+  margin-bottom: 0.2em;
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.película-principal .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.6em;
+}
+
+.película-principal .top .top10 {
+  max-height: 3%;
+  max-width: 3%;
+}
+
+.película-principal .top p {
+  font-size: 1.8em;
+  font-family: Roboto;
+  font-weight: 700;
+  padding-left: 0.4em;
 }
 
 .película-principal .descripción {
-  font-weight: normal;
+  font-family: Roboto;
+  font-weight: 400;
   font-size: 1.5em;
-  line-height: 1.75em;
+  line-height: 1.55em;
   max-width: 50%;
-  margin-bottom: 1.25em;
+  margin-bottom: 0.6em;
 }
 
-.película-principal .boton {
+.película-principal .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.8em;
+}
+
+.película-principal .botones .boton {
   border: none;
   border-radius: 0.31em;
   padding: 0.93em 1.57em;
@@ -168,28 +206,94 @@ header nav a.active {
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
   font-size: 1.2em;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
-.película-principal .boton i {
+.película-principal .botones .boton i {
   margin-right: 1.23em;
 }
 
-.película-principal .boton-play {
+.película-principal .botones .boton-play {
   background-color: #ffff;
   color: #000;
 }
 
-.película-principal .boton-info {
+.película-principal .botones .boton-info {
   background-color: rgba(196, 196, 196, 0.6);
   color: #ffff;
 }
 
-.película-principal .boton-info:hover {
+.película-principal .botones .boton-info:hover {
   background-color: rgba(160, 160, 160, 0.637);
 }
 
-.película-principal .boton-play:hover {
+.película-principal .botones .boton-play:hover {
   background-color: rgba(255, 255, 255, 0.788);
+}
+
+.película-principal .botones .botón-voto {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  margin-right: 0.8em;
+}
+
+.película-principal .créditos {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1.45em;
+  line-height: 1.5em;
+  margin-bottom: -4em;
+}
+
+.película-principal .créditos a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.película-principal .créditos a:hover {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.navbarabajo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: -1.5em;
+  padding-bottom: 0.28em;
+  margin-bottom: 1em;
+}
+
+.navbarabajo .info {
+  color: #fff;
+  border-bottom: 6px solid #e50914;
+}
+
+.navbarabajo a {
+  color: #ccc;
+  text-decoration: none;
+  padding-right: 2em;
+}
+
+.navbarabajo a:hover {
+  color: #fff;
 }
 
 /* Contendor: Título y controles */
@@ -323,7 +427,7 @@ header nav a.active {
 }
 
 footer {
-  padding-bottom: 20px;
+  padding-top: 0.7em;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -366,4 +470,4 @@ footer a:visited {
     max-width: 100%;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=detalles.css.map */
