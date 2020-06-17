@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap");
+
+:root {
+    --rojo: #e50914;
+    --fondo: #141414;
+    --gris: #c4c4c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: Roboto, sans-serif;
+}
+
+.fondo {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/Portada.jpg);
+    //background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
+
+header {
+    padding: 20px 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 5%,
+        rgba(0, 0, 0, 0.7) 30%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-start;
+    }
+
+    .logotipo {
+        max-height: 12%;
+        max-width: 12%;
+    }
+
+    nav {
+        a {
+            color: #aaa;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #ffff;
+        }
+
+        a.active {
+            color: #ffff;
+        }
+    }
+}
+
+.película-principal {
+    font-size: 16px;
+    margin-top: -0.5em;
+    min-height: 40.62em;
+    color: #fff;
+
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+
+    .contenedor {
+        margin: 0 auto;
+        margin-bottom: 6.5em;
+    }
+
+    .serieNetflix {
+        max-height: 70%;
+        max-width: 70%;
+    }
+
+    .título {
+        font-weight: 700;
+        font-size: 3.52em;
+        margin-bottom: -0.1em;
+    }
+
+    .novedad {
+        margin-bottom: 0.2em;
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.6em;
+
+        .top10 {
+            max-height: 3%;
+            max-width: 3%;
+        }
+
+        p {
+            font-size: 1.8em;
+            font-family: Roboto;
+            font-weight: 700;
+            padding-left: 0.4em;
+        }
+    }
+
+    .descripción {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.55em;
+        max-width: 50%;
+        margin-bottom: 0.6em;
+    }
+
+    .botones {
+        display: flex;
+        margin-bottom: 0.8em;
+
+        .boton {
+            i {
+                margin-right: 1.23em;
+            }
+            border: none;
+            border-radius: 0.31em;
+            padding: 0.93em 1.57em;
+            margin-right: 1.25em;
+            cursor: pointer;
+            transition: 0.3s ease all;
+            font-size: 1.2em;
+            font-family: Roboto;
+            font-weight: 500;
+        }
+
+        .boton-play {
+            background-color: #ffff;
+            color: #000;
+        }
+
+        .boton-info {
+            background-color: rgba(196, 196, 196, 0.6);
+            color: #ffff;
+        }
+
+        .boton-info:hover {
+            background-color: rgba(160, 160, 160, 0.637);
+        }
+
+        .boton-play:hover {
+            background-color: rgba(255, 255, 255, 0.788);
+        }
+
+        .botón-voto {
+            cursor: pointer;
+            transition: 0.3s ease all;
+            margin-right: 0.8em;
+        }
+    }
+
+    .créditos {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.45em;
+        line-height: 1.5em;
+        margin-bottom: -4em;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Roboto;
+            font-weight: 400;
+        }
+        a:hover {
+            text-decoration: none;
+            color: rgb(224, 224, 224);
+            font-family: Roboto;
+            font-weight: 500;
+        }
+    }
+}
+
+.navbarabajo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: -1.5em;
+    padding-bottom: 0.28em;
+    margin-bottom: 1em;
+
+    .info {
+        color: #fff;
+        border-bottom: 6px solid #e50914;
+    }
+
+    a {
+        color: #ccc;
+        text-decoration: none;
+        padding-right: 2em;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+}
+
+/* Contendor: Título y controles */
+
+.contenedor-título-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    h3 {
+        color: #ffff;
+        font-size: 30px;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+    }
+
+    .indicadores {
+        .botoncito {
+            background: #ffff;
+            height: 3px;
+            width: 12px;
+            cursor: pointer;
+            border: none;
+            margin-right: 2px;
+        }
+
+        .botoncito:hover,
+        .activo {
+            background: red;
+        }
+    }
+}
+
+/* Contendor: Principal y flechas */
+
+.películas-recomendadas {
+    margin-bottom: 50px;
+
+    .contenedor-carousel {
+        width: 100%;
+        padding: 20px 0;
+        overflow-x: hidden;
+
+        scroll-behavior: smooth;
+
+        .carousel {
+            scroll-behavior: smooth;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: visible;
+
+            .pelicula {
+                min-width: 20%;
+                transition: 0.3s ease all;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+
+            .pelicula:hover {
+                transform: scale(1.2);
+                transform-origin: center;
+            }
+        }
+    }
+
+    .contenedor-principal {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .flecha-derecha,
+        .flecha-izquierda {
+            align-items: center;
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0.1);
+            font-size: 40px;
+            height: 50%;
+            top: calc(50% - 25%);
+            line-height: 30px;
+            width: 40px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 500;
+            transition: 0.2s ease all;
+        }
+
+        .flecha-derecha:hover,
+        .flecha-izquierda:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .flecha-izquierda {
+            left: 0;
+            i {
+                margin-top: 35px;
+                margin-left: 10px;
+            }
+        }
+
+        .flecha-derecha {
+            right: 0;
+
+            i {
+                margin-top: 35px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 0.7em;
+    text-align: center;
+    align-items: center;
+
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 700;
+    color: #ffff;
+    text-decoration: none;
+
+    a:hover,
+    a:active {
+        color: #ffff;
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(116, 148, 253);
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        .logotipo {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .contenedor {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .película-principal {
+        font-size: 14px;
+
+        .descripción {
+            max-width: 100%;
+        }
+    }
+}
