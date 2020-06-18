@@ -42,26 +42,73 @@
                 <div class="contenedor">
                     <img class="serieNetflix" src="assets/img/Netflix Serie.png">
                     <h3 class="título">2020</h3>
-                    <img class="novedad" src="assets/img/Novedad.png">
-                    <div class="top">
-                        <img class="top10" src="assets/img/Top10.svg">
-                        <p>N.º 1 en España hoy</p>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropdown()">Temporada 1
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#">Temporada 1</a>
+                            <a href="#">Temporada 2</a>
+                            <a href="#">Temporada 3</a>
+                            <a href="#">Temporada 4</a>
+                            <a href="#">Temporada 5</a>
+                            <a href="#">Temporada 6</a>
+                        </div>
                     </div>
-                    <p class="descripción">Un duro año lleno de fenómenos que nadie esperaba, la realidad
-                        sobrepasa a la ficción. Un virus causa una pandemia global, anonymous saca viejos trapos,
-                        incendios en
-                        Australia, una posible tercera guerra mundial y los ciudadanos reclamando justicia.
-                    </p>
-                    <div class="botones">
-                        <buttom role="buttom" class="boton boton-play"><i class="fas fa-play"></i>Reproducir</buttom>
-                        <buttom role="buttom" class="boton boton-info"><i class="fas fa-plus"></i>Mi lista</buttom>
-                        <a class="botón-voto hvr-grow"><img src="assets/img/Manita arriba.svg"></a>
-                        <a class="botón-voto hvr-grow"><img src="assets/img/Manita abajo.svg"></a>
+                    <div class="contenedor-episodios">
+                        <div class="episodios">
+                            <div class="episodio">
+                                <a href="#"><img src="./assets/img/episodiost1/ep1.jpg" alt=""></a>
+                                <div class="titulo-tiempo">
+                                    <h4 class="título-episodio">¡Feliz año nuevo!</h4>
+                                    <span class="tiempo-episodio">32 min</span>
+                                </div>
+                                <p class="descripción-episodio">Se celebra el año nuevo con normalidad pero nadie se
+                                    espera lo que les espera...
+                                    Nadie debería haber pedido deseos ni haberse puesto metas.</p>
+                            </div>
+                            <div class="episodio">
+                                <a href="#"><img src="./assets/img/episodiost1/ep2.jpg" alt=""></a>
+                                <div class="titulo-tiempo">
+                                    <h4 class="título-episodio">Australia en llamas</h4>
+                                    <span class="tiempo-episodio">25 min</span>
+                                </div>
+                                <p class="descripción-episodio">52.400 kilómetros cuadrados devastados, 27 fallecidos y
+                                    miles de desplazados y más de 1.000 millones de animales afectados.</p>
+                            </div>
+                            <div class="episodio">
+                                <a href="#"><img src="./assets/img/episodiost1/ep3.jpg" alt=""></a>
+                                <div class="titulo-tiempo">
+                                    <h4 class="título-episodio">Tercera Guerra Mundial.</h4>
+                                    <span class="tiempo-episodio">34 min</span>
+                                </div>
+                                <p class="descripción-episodio">Tras más de una semana de escalada en el conflicto,
+                                    Washington mató en un ataque relámpago en Irak a Qasem Soleimani, el alto mando
+                                    militar.</p>
+                            </div>
+                            <div class="episodio">
+                                <a href="#"><img src="./assets/img/episodiost1/ep4.jpg" alt=""></a>
+                                <div class="titulo-tiempo">
+                                    <h4 class="título-episodio">Plaga de langostas</h4>
+                                    <span class="tiempo-episodio">32 min</span>
+                                </div>
+                                <p class="descripción-episodio">Un pequeño de enjambre de langostas cubriendo un
+                                    kilómetro cuadrado puede comer la misma cantidad de alimentos en un día que 35.000
+                                    personas.</p>
+                            </div>
+                            <div class="episodio">
+                                <a href="#"><img src="./assets/img/Carousel/Serie2020.jpg" alt=""></a>
+                                <div class="titulo-tiempo">
+                                    <h4 class="título-episodio">¡Feliz año nuevo!</h4>
+                                    <span class="tiempo-episodio">32 min</span>
+                                </div>
+                                <p class="descripción-episodio">Se celebra el año nuevo con normalidad pero nadie se
+                                    espera lo que les espera...
+                                    Nadie debería haber pedido deseos ni haberse puesto metas.</p>
+                            </div>
+
+                        </div>
                     </div>
-                    <p class="créditos"><b>Protagonizada por:</b> Donald Trump, Anonymous, Twitter<br />
-                        <b>Géneros:</b> Series TV, Terror, Puta Realidad<br />
-                        <b>Creada por:</b> <a class="hvr-grow" href="https://github.com/Vicente015">Vicente015</a>
-                    </p>
                 </div>
             </div>
             <div class="navbarabajo contenedor">
@@ -134,7 +181,23 @@
                     <a class="hvr-grow" href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
             </div>
         </footer>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function dropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
         <script src="https://kit.fontawesome.com/8d7c8a0c23.js" crossorigin="anonymous"></script>
         <script src="./assets/js/main.js"></script>
 </body>

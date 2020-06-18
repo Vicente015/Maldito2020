@@ -21,8 +21,8 @@ body {
 }
 
 .fondo {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/Portada.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/Portada.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.85))), url(../img/Portada.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.85) 100%), url(../img/Portada.jpg);
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -127,7 +127,7 @@ header nav a.active {
 
 .película-principal {
   font-size: 16px;
-  margin-top: -0.5em;
+  margin-top: 2em;
   min-height: 40.62em;
   color: #fff;
   margin-bottom: 3.12em;
@@ -155,112 +155,127 @@ header nav a.active {
   margin-bottom: -0.1em;
 }
 
-.película-principal .novedad {
-  margin-bottom: 0.2em;
-  max-height: 80%;
-  max-width: 80%;
+.película-principal .dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: #000000;
+  color: white;
+  border: 2px solid #ffff;
 }
 
-.película-principal .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.6em;
-}
-
-.película-principal .top .top10 {
-  max-height: 3%;
-  max-width: 3%;
-}
-
-.película-principal .top p {
-  font-size: 1.8em;
-  font-family: Roboto;
-  font-weight: 700;
-  padding-left: 0.4em;
-}
-
-.película-principal .descripción {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 1.55em;
-  max-width: 50%;
-  margin-bottom: 0.6em;
-}
-
-.película-principal .botones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 0.8em;
-}
-
-.película-principal .botones .boton {
-  border: none;
-  border-radius: 0.31em;
-  padding: 0.93em 1.57em;
-  margin-right: 1.25em;
+.película-principal .dropdown .dropbtn {
   cursor: pointer;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-  font-size: 1.2em;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #000000;
+  padding: 14px 16px;
   font-family: Roboto;
   font-weight: 500;
 }
 
-.película-principal .botones .boton i {
-  margin-right: 1.23em;
+.película-principal .navbar a:hover,
+.película-principal .dropdown:hover .dropbtn,
+.película-principal .dropbtn:focus {
+  background-color: #111111;
 }
 
-.película-principal .botones .boton-play {
-  background-color: #ffff;
-  color: #000;
+.película-principal .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000d5;
+  color: #e2e2e2;
+  min-width: 150px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.película-principal .botones .boton-info {
-  background-color: rgba(196, 196, 196, 0.6);
+.película-principal .dropdown-content a {
+  float: none;
+  color: #d4d4d4;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.película-principal .dropdown-content a:hover {
   color: #ffff;
 }
 
-.película-principal .botones .boton-info:hover {
-  background-color: rgba(160, 160, 160, 0.637);
+.película-principal .show {
+  display: block;
 }
 
-.película-principal .botones .boton-play:hover {
-  background-color: rgba(255, 255, 255, 0.788);
+.película-principal .contenedor-episodios {
+  width: 100%;
+  padding: 20px 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.película-principal .botones .botón-voto {
-  cursor: pointer;
+.película-principal .contenedor-episodios .episodios {
+  scroll-behavior: smooth;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: visible;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio {
+  margin-left: 20px;
+  min-width: 15%;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  margin-right: 0.8em;
 }
 
-.película-principal .créditos {
+.película-principal .contenedor-episodios .episodios .episodio img {
+  width: 300px;
+  height: 145px;
+  vertical-align: top;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .titulo-tiempo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .titulo-tiempo h4 {
+  right: 0;
+  font-size: 20px;
   font-family: Roboto;
-  font-weight: 400;
-  font-size: 1.45em;
-  line-height: 1.5em;
-  margin-bottom: -4em;
+  font-weight: 700;
+  color: #808080;
 }
 
-.película-principal .créditos a {
-  text-decoration: none;
-  color: #fff;
+.película-principal .contenedor-episodios .episodios .episodio .titulo-tiempo span {
+  left: 0;
+  font-size: 19px;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 700;
+  color: #8a8a8a;
 }
 
-.película-principal .créditos a:hover {
-  text-decoration: none;
-  color: #e0e0e0;
+.película-principal .contenedor-episodios .episodios .episodio p {
+  margin: 5px 0;
+  font-size: 18px;
   font-family: Roboto;
   font-weight: 500;
+  color: #9999;
 }
 
 .navbarabajo {
@@ -278,7 +293,7 @@ header nav a.active {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  margin-top: -1.5em;
+  margin-top: -2em;
   padding-bottom: 0.28em;
   margin-bottom: 1em;
 }
