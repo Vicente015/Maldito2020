@@ -187,7 +187,6 @@ header {
         width: 100%;
         padding: 20px 0;
         overflow-x: hidden;
-
         scroll-behavior: smooth;
 
         .episodios {
@@ -198,14 +197,13 @@ header {
             overflow-x: visible;
 
             .episodio {
+                width: 325px;
                 margin-left: 20px;
                 min-width: 15%;
                 transition: 0.3s ease all;
 
                 img {
-                    width: 300px;
-                    height: 145px;
-                    //width: 100%;
+                    width: 100%;
                     vertical-align: top;
                 }
 

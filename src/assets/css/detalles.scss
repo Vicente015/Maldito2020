@@ -166,6 +166,9 @@ header {
         display: flex;
         margin-bottom: 0.8em;
 
+        a {
+            text-decoration: none;
+        }
         .boton {
             i {
                 margin-right: 1.23em;

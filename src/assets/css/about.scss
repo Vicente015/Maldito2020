@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap");
+
+:root {
+    --rojo: #e50914;
+    --fondo: #141414;
+    --gris: #c4c4c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: Roboto, sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 20px 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 5%,
+        rgba(0, 0, 0, 0.7) 30%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-start;
+    }
+
+    .logotipo {
+        max-height: 12%;
+        max-width: 12%;
+    }
+
+    nav {
+        a {
+            color: #aaa;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #ffff;
+        }
+
+        a.active {
+            color: #ffff;
+        }
+    }
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-10deg);
+    }
+    20% {
+        transform: rotate(12deg);
+    }
+    30% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(9deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
+
+.about {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .logo {
+        width: 10%;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+
+    .titulo {
+        color: #fff;
+        margin-top: 10px;
+        font-size: 40px;
+        font-family: Inter;
+        font-weight: 700;
+        span.wave {
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+        }
+    }
+}
+
+.descripción {
+    width: 42%;
+    margin-bottom: 30px;
+
+    .texto {
+        word-wrap: break-word;
+        color: rgb(236, 236, 236);
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 35px;
+
+        i {
+            color: red;
+        }
+    }
+}
+
+.redes {
+    width: 42%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    h3 {
+        color: #fff;
+        font-size: 30px;
+        font-family: Inter;
+        font-weight: 700;
+    }
+
+    a,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+        margin-right: 5px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: rgb(204, 204, 204);
+    }
+}
+
+footer {
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 700;
+    color: #ffff;
+    text-decoration: none;
+
+    a:hover,
+    a:active {
+        color: #ffff;
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(116, 148, 253);
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        .logotipo {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .contenedor {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .película-principal {
+        font-size: 14px;
+
+        .descripción {
+            max-width: 100%;
+        }
+    }
+}

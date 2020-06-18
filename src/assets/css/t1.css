@@ -229,6 +229,7 @@ header nav a.active {
 }
 
 .película-principal .contenedor-episodios .episodios .episodio {
+  width: 325px;
   margin-left: 20px;
   min-width: 15%;
   -webkit-transition: 0.3s ease all;
@@ -236,8 +237,7 @@ header nav a.active {
 }
 
 .película-principal .contenedor-episodios .episodios .episodio img {
-  width: 300px;
-  height: 145px;
+  width: 100%;
   vertical-align: top;
 }
 

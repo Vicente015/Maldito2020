@@ -1,0 +1,311 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap");
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+  --gris: #c4c4c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: borde-box;
+          box-sizing: borde-box;
+}
+
+body {
+  background: var(--fondo);
+  font-family: Roboto, sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding: 20px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.7)), color-stop(80%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+header .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+header .logotipo {
+  max-height: 12%;
+  max-width: 12%;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+
+header nav a.active {
+  color: #ffff;
+}
+
+.github-corner:hover .octo-arm {
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out;
+}
+
+@-webkit-keyframes octocat-wave {
+  0%,
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  20%,
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  20%,
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  30% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  40% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  20% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  30% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  40% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .github-corner .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+.about {
+  margin: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about .logo {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.about .titulo {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.about .titulo span.wave {
+  -webkit-animation-name: wave-animation;
+          animation-name: wave-animation;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 70% 70%;
+          transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.descripción {
+  width: 42%;
+  margin-bottom: 30px;
+}
+
+.descripción .texto {
+  word-wrap: break-word;
+  color: #ececec;
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.descripción .texto i {
+  color: red;
+}
+
+.redes {
+  width: 42%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.redes h3 {
+  color: #fff;
+  font-size: 30px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.redes a,
+.redes a:active,
+.redes a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.redes a:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 700;
+  color: #ffff;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+  color: #ffff;
+  text-decoration: none;
+}
+
+footer a:link,
+footer a:visited {
+  color: #7494fd;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  header .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .película-principal {
+    font-size: 14px;
+  }
+  .película-principal .descripción {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=about.css.map */
