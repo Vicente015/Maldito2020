@@ -236,6 +236,43 @@ header nav a.active {
   transition: 0.3s ease all;
 }
 
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play {
+  position: relative;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play .svg-play {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 20%;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play img {
+  display: block;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play:hover {
+  cursor: pointer;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play:hover .svg-play {
+  opacity: 1;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play:hover .svg-play:hover svg path {
+  fill: red;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play:hover .svg-play:hover svg circle {
+  fill: #0000005e;
+}
+
+.película-principal .contenedor-episodios .episodios .episodio .contenedor-play:hover .svg-play:hover svg {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
 .película-principal .contenedor-episodios .episodios .episodio img {
   width: 100%;
   vertical-align: top;

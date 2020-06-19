@@ -202,6 +202,42 @@ header {
                 min-width: 15%;
                 transition: 0.3s ease all;
 
+                .contenedor-play {
+                    position: relative;
+
+                    .svg-play {
+                        opacity: 0;
+                        position: absolute;
+                        top: 30%;
+                        left: 40%;
+                        width: 20%;
+                    }
+
+                    img {
+                        display: block;
+                    }
+                }
+
+                .contenedor-play:hover {
+                    cursor: pointer;
+                    .svg-play {
+                        opacity: 1;
+                    }
+
+                    .svg-play:hover {
+                        svg path {
+                            fill: red;
+                        }
+
+                        svg circle {
+                            fill: #0000005e;
+                        }
+                        svg {
+                            transform: scale(1.08);
+                        }
+                    }
+                }
+
                 img {
                     width: 100%;
                     vertical-align: top;
