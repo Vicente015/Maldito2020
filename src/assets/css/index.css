@@ -247,6 +247,7 @@ header nav a.active {
       flex-wrap: nowrap;
   width: 100%;
   overflow-x: visible;
+  cursor: pointer;
 }
 
 .películas-recomendadas .contenedor-carousel .carousel .pelicula {

@@ -360,6 +360,7 @@ header {
             overflow-x: visible;
 
             .pelicula {
+                cursor: pointer;
                 min-width: 20%;
                 transition: 0.3s ease all;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

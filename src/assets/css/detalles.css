@@ -364,6 +364,7 @@ header nav a.active {
 }
 
 .películas-recomendadas .contenedor-carousel .carousel .pelicula {
+  cursor: pointer;
   min-width: 20%;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
