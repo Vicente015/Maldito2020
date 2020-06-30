@@ -203,20 +203,24 @@ header nav a.active {
   text-decoration: none;
 }
 
-.película-principal .botones .boton {
-  border: none;
-  border-radius: 0.31em;
-  padding: 0.93em 1.57em;
+.película-principal .botones .botondiv {
   margin-right: 1.25em;
-  cursor: pointer;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
+  cursor: pointer;
   font-size: 1.2em;
   font-family: Roboto;
   font-weight: 500;
+  margin-top: 0.7em;
 }
 
-.película-principal .botones .boton i {
+.película-principal .botones .botondiv .boton {
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.57em;
+}
+
+.película-principal .botones .botondiv .boton i {
   margin-right: 1.23em;
 }
 
